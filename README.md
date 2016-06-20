@@ -1,5 +1,4 @@
 # JavaScriptDailyPractice
-# 在此处输入标题
 
 标签（空格分隔）： canvas
 
@@ -28,5 +27,6 @@
 视图
 上下文
 支持
+
 
 

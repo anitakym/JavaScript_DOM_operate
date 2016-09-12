@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>clock</title>
+    <script>
+        var checkTime = function(n) {
+            if(n<10){
+                n = "0" + n;
+            }
+            return n;
+        };
+        var startTime = function() {
+            var now = new Date();
+            var h = now.getHours();
+            var m = now.getMinutes();
+            var s = now.getSeconds();
+
+            var obj = document.getElementById("txt");
+            m = checkTime(m);
+            s = checkTime(s);
+            obj.innerHTML = h + ':'+m+':'+s;
+
+        };
+        timer = setInterval("startTime()",1000);
+        window.addEventListener("load",startTime);
+    </script>
+</head>
+<body>
+<div id="txt"></div>
+
+</body>
+</html>
